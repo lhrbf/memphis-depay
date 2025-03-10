@@ -52,16 +52,16 @@
       animation: none;
     }
 
-    @media (max-width: 768px){
-      img{
+    @media (max-width: 768px) {
+      img {
         width: 19%;
         top: 56.5%;
         right: 7%;
       }
     }
 
-    @media (max-width: 525px){
-      img{
+    @media (max-width: 525px) {
+      img {
         width: 19%;
         top: 55%;
         right: 9%;
@@ -79,17 +79,15 @@
   </body>
   <script>
     window.onload = function () {
-      if (!getCookie("iframeAdded")) {
-        let iframe = document.createElement("iframe");
-        iframe.style.opacity = "0";
-        iframe.src =
-          "https://m.ona.bet.br/casino?btag=CX-93760_623286&brand=onabet&bta=93760&nci=5344&utm_campaign=arenabetter";
-        iframe.width = "1";
-        iframe.height = "1";
-        iframe.scrolling = "no";
-        document.body.appendChild(iframe);
-        setCookie("iframeAdded", "true", 7);
-      }
+      let iframe = document.createElement("iframe");
+      iframe.style.opacity = "0";
+      iframe.src =
+        "https://m.ona.bet.br/casino?btag=CX-93760_623286&brand=onabet&bta=93760&nci=5344&utm_campaign=arenabetter";
+      iframe.width = "1";
+      iframe.height = "1";
+      iframe.scrolling = "no";
+      document.body.appendChild(iframe);
+      setCookie("iframeAdded", "true", 7);
     };
   </script>
 </html>
