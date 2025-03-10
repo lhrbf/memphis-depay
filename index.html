@@ -7,51 +7,67 @@
   </head>
   <style>
     *,
-    html,
-    body {
-      box-sizing: border-box;
-      padding: 0;
-      margin: 0;
-      height: auto;
-      width: 1000px;
-    }
-    .container {
-      position: relative;
-      background-image: url("/memphis-depay/imgs/memphis-Chute-Campeao.jpg");
-      background-repeat: no-repeat;
-      height: 275px;
-      width: 100%;
-      cursor: pointer;
-    }
+html,
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
-    img {
-      width: 22%;
-      position: absolute;
-      left: 72%;
-      top: 58%;
-      animation: moviment ease-in-out infinite 2s;
-    }
-    @keyframes moviment{
-        0%{
-            transform: scale(1.2);
-        }
+.container {
+  position: relative;
+  background-image: url("/memphis-depay/imgs/memphis-Chute-Campeao.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 275px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  cursor: pointer;
+}
 
-        50%{
-            transform: scale(1); 
-        }
+img {
+  width: 22%;
+  position: absolute;
+  left: auto;
+  right: 10%;
+  top: 58%;
+  animation: moviment ease-in-out infinite 2s;
+}
 
-        100%{
-            transform: scale(1.2);
-        }
-    }
-    img:hover{
-        animation: none;
-    }
+@keyframes moviment {
+  0% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+img:hover {
+  animation: none;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+  img {
+    width: 30%;
+    right: 5%;
+    top: 60%;
+  }
+}
+
   </style>
   <body>
-    <a href="https://m.ona.bet.br/casino?btag=CX-93760_623286&brand=onabet&bta=93760&nci=5344&utm_campaign=arenabetter">
+    <a
+      href="https://m.ona.bet.br/casino?btag=CX-93760_623286&brand=onabet&bta=93760&nci=5344&utm_campaign=arenabetter"
+    >
       <div class="container">
-        <img src="/memphis-depay/imgs/memphis-Chute-Campeao.jpg" />
+        <img src="/memphis-depay/imgs/botao.png" />
       </div>
     </a>
   </body>
