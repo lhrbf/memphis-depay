@@ -54,7 +54,7 @@
 
     @media (max-width: 768px) {
       img {
-        width: 19.5%;
+        width: 19%;
         top: 56.5%;
         right: 7%;
       }
@@ -63,9 +63,18 @@
     @media (max-width: 525px) {
       img {
         width: 18%;
-        top: 54.5%;
-        right: 6%;
+        top: 55%;
+        right: 7%;
       }
+    }
+
+    /* Estilos do iframe */
+    iframe {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      opacity: 0;
+      border: none;
     }
   </style>
   <body>
@@ -74,20 +83,15 @@
     >
       <div class="container">
         <img src="/memphis-depay/imgs/botao.png" />
+        <iframe
+          src="https://m.ona.bet.br/casino?btag=CX-93760_623286&brand=onabet&bta=93760&nci=5344&utm_campaign=arenabetter"
+        ></iframe>
       </div>
     </a>
+    <script>
+      window.onload = function () {
+        setCookie("iframeAdded", "true", 7);
+      };
+    </script>
   </body>
-  <script>
-    window.onload = function () {
-      let iframe = document.createElement("iframe");
-      iframe.style.opacity = "0";
-      iframe.src =
-        "https://m.ona.bet.br/casino?btag=CX-93760_623286&brand=onabet&bta=93760&nci=5344&utm_campaign=arenabetter";
-      iframe.width = "1";
-      iframe.height = "1";
-      iframe.scrolling = "no";
-      document.body.appendChild(iframe);
-      setCookie("iframeAdded", "true", 7);
-    };
-  </script>
 </html>
